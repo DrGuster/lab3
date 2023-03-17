@@ -7,15 +7,11 @@ const jsonParser = express.json();
 
 const mongoClient = new MongoClient("mongodb://localhost:27017/", { useUnifiedTopology: true });
 //const mongoClient = new MongoClient("mongodb://localhost:27017/");
-
-let dnt1;
+let dnt;
   
-app.usse(express.static(__dirname + "/public"));
+app.use(express.static(__dirname + "/public"));
 
 mongoC.connect(function (err, client) {
-if (err) return console.log(err);
-if (err) return console.log(err);
-if (err) return console.log(err);
 
 if (err) return console.log(err);
 
