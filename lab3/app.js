@@ -8,7 +8,7 @@ const jsonParser = express.json();
 const mongoClient = new MongoClient("mongodb://localhost:27017/", { useUnifiedTopology: true });
 //const mongoClient = new MongoClient("mongodb://localhost:27017/");
 
-let dbClient;
+let dnt;
   
 app.use(express.static(__dirname + "/public"));
 
