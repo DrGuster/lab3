@@ -12,7 +12,7 @@ let dbClient;
   
 app.use(express.static(__dirname + "/public"));
 
-mongoClient.connect(function (err, client) {
+mongoC.connect(function (err, client) {
         if (err) return console.log(err);
         dbClient = client;
         app.locals.collection = client.db("sitedb").collection("users");
