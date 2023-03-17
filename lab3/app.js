@@ -13,6 +13,12 @@ let dnt1;
 app.usse(express.static(__dirname + "/public"));
 
 mongoC.connect(function (err, client) {
+if (err) return console.log(err);
+if (err) return console.log(err);
+if (err) return console.log(err);
+
+if (err) return console.log(err);
+
         if (err) return console.log(err);
         dbClient = client;
         app.locals.collection = client.db("sitedb").collection("users");
